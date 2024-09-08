@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Static Website Builder</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+  <div class="container">
+      <header class="heading">
+        <h1 class="heading-text">Milestone 1: Build your Resume</h1>
+      </header>
+      <main>
+        <div class="form-div">
+          <form method="GET" class="form-container">
+            <!-- Contact Information starts here  -->
+            <div class="contact-information-section">
+              <h2 class="form-headings">Contact Information:</h2>
+              
+              <label class="labels" for="fname">First Name: </label>
+              <br>
+              <input class="inputs fname-input" type="text" placeholder="Rahila" id="fname" value="Rahila" required>
+              <br>
+              
+              <label class="labels" for="lname">Last Name: </label>
+              <br>
+              <input class="inputs lname-input" type="text" placeholder="Naz" id="lname" value="Naz" required>
+              <br>
+              
+              <label class="labels" for="email">Email: </label>
+              <br>
+              <input class="inputs email-input" type="email" name="email" id="email" placeholder="rahila.naz321@gmail.com" value="rahila.naz321@gmail.com" required>
+              <br>
+              
+              <label class="labels" for="address">Address: </label>
+              <br class="display-hidden">
+              <input class="inputs" type="text" name="address" id="address" placeholder="House #19, Street #1, Sector-A, Akhter Colony, Karachi, Near DHA Ph-I" value="House #19, Street #1, Sector-A, Akhter Colony, Karachi, Near DHA Ph-I"> 
+              <br>
+
+              <label class="labels" for="phnumber">Phone Number: </label>
+              <br class="display-hidden">
+              <input class="inputs num-input" type="tel" name="phnumber" id="phnumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" value="+92 321 2105 521" minlength="12" maxlength="15"> 
+              <br>
+              
+              <label class="labels" for="resume-image">: </label>
+              <input type="file" id="resume-image" accept="image/*">
+              <br>
+            </div>
+            <!-- Contact Information ends here -->
+            
+            <div class="border"></div>
+
+            <!-- Education starts here -->
+             <div class="education-section">
+                <h2 class="form-headings">Education</h2>
+                
+                <div class="education-data">
+                  <p>Bachelor of Commerce (B.Com), University of Karachi | 2012, Grade: B</p>
+                  <p>Higher Secondary Certificate (HSC) in Commerce, Board of Karachi | 2009, Grade: B</p>
+                  <p>Secondary School Certificate (SSC) in General, Board of Karachi | 2007, Grade: A</p>
+                </div>
+
+                <button type="button" class="btns" id="education-btn">Add Education</button>
+             </div>
+            
+            <!-- Education ends here -->
+
+            <div class="border"></div>
+
+            <!-- Skills starts here -->
+
+             <div class="skills-section">
+                <h2 class="form-headings">Skills</h2>
+
+                <div class="skills-data ">
+                  <p>ASIN Verification, E-commerce Platforms, Attention to Detail, Communication, Independent Work</p>
+                </div>
+
+                <button type="button" class="btns" id="skills-btn">Add Skills</button>
+             </div>
+
+            <!-- Skills ends here -->
+
+            <div class="border"></div>
+
+            <!-- Work Experience starts here -->
+
+             <div class="work-exp">
+                <h2 class="form-headings">Work Experience</h2>
+
+                <div class="workexp-data">
+                  <p>Frontend Developer (Freelancer) | June 2023 – Present</p>
+                  <p>Assistant Marketing Manager, Add Viewer Marketing Agency | January 2010 – August 2012</p>
+                  <p>Customer Relationship Officer, Toyota Showroom KIA | March 2007 – December 2009</p>
+                </div>
+
+                <button type="button" class="btns" id="workexp-btn">Add Work Experience</button>
+             </div>
+
+            <!-- Work Experience ends here -->
+
+            <div class="border"></div>
+
+            <button class="btns transparent" type="submit">Submit</button>
+            <button class="btns transparent" type="reset">Reset</button>
+          </form>
+        </div>
+      </main>
+      <footer class="footer-text">
+        <h1>Created by Rahila Naz with &#10084;</h1>
+      </footer>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
